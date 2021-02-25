@@ -20,11 +20,6 @@ pipeline {
             steps {
                 sh 'mvn test'
             }
-            post {
-                always {
-                    junit 'target/classes/*.class'
-                }
-            }
         }
         stage('Deliver') {
             steps {
