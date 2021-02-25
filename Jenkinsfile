@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
+                sh './jenkins/workspace/new/*'
             }
         }
         stage ('Creat War File') {
