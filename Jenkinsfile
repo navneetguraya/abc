@@ -7,7 +7,7 @@ pipeline {
         stage('Git Checkout') {
             steps {
                 git branch: 'main',
-                credentialsId: '22f9a7d0-eada-44ac-a939-48e27c7e868f',
+                credentialsId: 'e8d0d800-ea2d-43eb-a937-ab0a484cace8',
                 url: 'https://github.com/navneetguraya/abc.git'
                 }
         }
